@@ -1,0 +1,28 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*criando variavies para facil manutenção */
+body{
+    background-color: darkblue;
+    color: aliceblue;
+    justify-content: center;
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+}
+  
+  a {
+    margin: 10px;
+    background-color: aqua;
+    color: white;
+    background: #0D1127;
+    padding: 1rem 3rem 1rem 3rem;
+    border-radius: 5rem;
+    border: 5px solid #5978F3;
+    font-size: 1.2rem;
+    letter-spacing: 0.075em;
+  }

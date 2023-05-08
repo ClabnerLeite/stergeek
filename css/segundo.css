@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  
+}
+
+.hh1 {
+  background-color: black;
+  color: aqua;
+  display: contents;
+  font-size: 50px;
+  align-items: center;
+
+}
+.hh1 > a{
+  text-decoration: none;
+}
+.hh1 > img{
+  max-width: 100px;
+  max-height: 100px;
+}
+
+a {
+  margin: 10px;
+  background-color: aqua;
+  color: white;
+  background: #0D1127;
+  padding: 1rem 3rem 1rem 3rem;
+  border-radius: 5rem;
+  border: 5px solid #5978F3;
+  font-size: 1.2rem;
+  letter-spacing: 0.075em;
+}
+.Filmes-container {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.Filmes > p{
+  color: aqua;
+  font-size: 50px;
+  box-shadow: #f3595c;
+  margin: 10px;
+
+}
+.Filmes img{
+ width: 200px;
+ height: 300px;
+ padding: 10px;
+
+}
+.Jogos-container {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.Jogos > p{
+  color: aqua;
+  font-size: 50px;
+  box-shadow: #f3595c;
+  margin: 10px;
+
+}
+.Jogos img{
+ width: 200px;
+ height: 300px;
+ padding: 10px;
+}
+.Mangas-container {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.Mangas > p{
+  color: aqua;
+  font-size: 50px;
+  box-shadow: #f3595c;
+  margin: 10px;
+
+}
+.Mangas img{
+ width: 200px;
+ height: 300px;
+ padding: 10px;
+}
+.Animes-container {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.Animes > p{
+  color: aqua;
+  font-size: 50px;
+  box-shadow: #f3595c;
+  margin: 10px;
+
+}
+.Animes img{
+ width: 200px;
+ height: 300px;
+ padding: 10px;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css\segundo.css">
+</head>
+
+<body>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css\style.css">
+    </head>
+
+    <body>
+        <div class="hh1">
+                       <img src="img\3.png" alt="">
+
+            <h1> Bem vindo ao Star Geek</h1>
+            <a href="maisuma.html">Perfil</a>
+            <a href="">Jogos</a>
+            <a href="">Animes</a>
+            <a href="">Filmes</a>
+            <a href="">Mangás</a>
+            <a href="mmais.html">Cadastro de Midia</a>
+
+        </div>
+        <div class="Filmes">
+            <p>Filmes</p>
+            <div class="Filmes-container box">
+                <img src="img\JOJO RABBIT MOVIE POSTER.png" alt="">
+                <img src="img\The Godfather Poster.jpg" alt="">
+                <img src="img\@sk4tehu.jpg" alt="">
+                <img src="img\🎬.jpg" alt="">
+                <img src="img\1.jpg" alt="">
+                <img src="img\3dbd3d74-dbc3-497d-adb4-004c648d9670.jpg" alt="">
+                <img src="img\7ba38b80-0739-4a31-9b5b-424a95c1f304.jpg" alt="">
+                <img src="img\36b6e05d-273e-487d-b5d3-3faa762e175f.jpg" alt="">
+                <img src="img\87d4293b-7c0d-4416-8602-2b17c789dd44.jpg" alt="">
+                <img src="img\1917 MOVIE POSTER.png" alt="">
+                <img src="img\17354f25-dc38-4c23-ab9c-abd436f6c0bd.jpg" alt="">
+                <img src="img\b4ee8c47-8b28-492c-b9d8-1644bb83ffd1.jpg" alt="">
+                <img src="img\Breaking bad by Millie.jpg" alt="">
+                <img src="img\Mr Robot Alternative Poster.jpg" alt="">
+            </div>
+        </div>
+        <div class="Jogos">
+            <p>Jogos</p>
+            <div class="Jogos-container box">
+                <img src="img\01 (1).jpg" alt="">
+                <img src="img\01 (2).jpg" alt="">
+                <img src="img\01 (3).jpg" alt="">
+                <img src="img\01 (4).jpg" alt="">
+                <img src="img\01 (5).jpg" alt="">
+                <img src="img\01 (6).jpg" alt="">
+                <img src="img\01 (7).jpg" alt="">
+                <img src="img\01 (8).jpg" alt="">
+                <img src="img\01 (9).jpg" alt="">
+                <img src="img\01 (10).jpg" alt="">
+                <img src="img\01 (11).jpg" alt="">
+                <img src="img\01 (12).jpg" alt="">
+                <img src="img\01 (13).jpg" alt="">
+                <img src="img\01 (14).jpg" alt="">
+                <img src="img\01 (15).jpg" alt="">
+            </div>
+        </div>
+        <div class="Mangas">
+            <p>Mangás</p>
+            <div class="Mangas-container box">
+                <img src="img\03 (1).jpg" alt="">
+                <img src="img\03 (1).png" alt="">
+                <img src="img\03 (2).jpg" alt="">
+                <img src="img\03 (3).jpg" alt="">
+                <img src="img\03 (4).jpg" alt="">
+                <img src="img\03 (5).jpg" alt="">
+                <img src="img\03 (6).jpg" alt="">
+                <img src="img\03 (7).jpg" alt="">
+                <img src="img\03 (8).jpg" alt="">
+                <img src="img\03 (9).jpg" alt="">
+                <img src="img\03 (10).jpg" alt="">
+                <img src="img\03 (11).jpg" alt="">
+                <img src="img\03 (12).jpg" alt="">
+                <img src="img\03 (13).jpg" alt="">
+            </div>
+        </div>
+        <div class="Animes">
+            <p>Animes</p>
+            <div class="Animes-container box">
+                <img src="img\02 (1).jpg" alt="">
+                <img src="img\02 (1).png" alt="">
+                <img src="img\02 (2).jpg" alt="">
+                <img src="img\02 (3).jpg" alt="">
+                <img src="img\02 (4).jpg" alt="">
+                <img src="img\02 (5).jpg" alt="">
+                <img src="img\02 (6).jpg" alt="">
+                <img src="img\02 (7).jpg" alt="">
+                <img src="img\02 (8).jpg" alt="">
+                <img src="img\02 (9).jpg" alt="">
+                <img src="img\02 (10).jpg" alt="">
+                <img src="img\02 (11).jpg" alt="">
+                <img src="img\02 (12).jpg" alt="">
+                <img src="img\02 (13).jpg" alt="">
+            </div>
+        </div>
+
+    </body>
+
+    <script>
+        const slider = document.querySelectorAll('.box');
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+
+
+
+        slider.forEach(Slid => {
+            Slid.addEventListener('mousedown', (e) => {
+                isDown = true;
+                Slid.classList.add('active');
+                startX = e.pageX - Slid.offsetLeft;
+                scrollLeft = Slid.scrollLeft;
+            });
+            Slid.addEventListener('mouseleave', () => {
+                isDown = false;
+                Slid.classList.remove('active');
+            });
+            Slid.addEventListener('mouseup', () => {
+                isDown = false;
+                Slid.classList.remove('active');
+            });
+            Slid.addEventListener('mousemove', (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - Slid.offsetLeft;
+                const walk = (x - startX) * 1;
+                Slid.scrollLeft = scrollLeft - walk;
+                console.log(walk);
+            });
+        })
+
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.t1 {
+  background-image: url(..//img/avengers-gif.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.corpo {
+  margin: auto;
+  max-width: 300px;
+  background: #000000;
+  overflow: hidden;
+  border-radius: 16px;
+  color: #ffffff;
+  margin-top: 10%;
+}
+
+.menu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 24px 24px;
+  gap: 16px;
+  text-align: center;
+}
+
+
+.Titulo {
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.subtitulo {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+
+.a1 {
+  overflow: hidden;
+  border-radius: 8px;
+  background-color: #ffffff;
+  margin: 1rem 0 .5rem;
+  width: 100%;
+}
+
+.i1 {
+  background: none;
+  border: 0;
+  outline: 0;
+  height: 40px;
+  width: 100%;
+  border-bottom: 1px solid #000000;
+  font-size: .9rem;
+  padding: 8px 15px;
+}
+
+.botao1 {
+
+  background-color: #808080;
+  color: #fff;
+  border: 0;
+  border-radius: 24px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+
+}
+
+.botao1:hover {
+  background-color: #747474;
+}
+
+.e2>img {
+  height: 100%;
+  width: 100%;
+}
+
+.fundo {
+  background-image: url(..//img/pacman-gaming.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fundo2 {
+  background-image: url(../img/2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cabe {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  background-image: url(..//img/geek.png);
+}
+
+.tx {
+  background-color: #000000;
+}
+
+.cabe>img {
+  height: 200px;
+  width: 300px;
+}
+
+.a2 {
+  padding: 80px;
+
+}
+
+.a2>a {
+  margin-top: 40px;
+  margin: 10px;
+}
+
+.p1 {
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.pa {
+  color: white;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+}
+
+.corpo1 {
+  display: flex;
+
+}
+
+.corpo1>img {
+  width: 50%;
+  margin-left: 600px;
+}
+
+.corpo1>.tex {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.p1>h3 {
+  margin: 0 auto;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: rgb(14, 14, 26);
+  color: rgb(234, 234, 234);
+  font-weight: 700;
+  transition: 0.6s;
+  box-shadow: 0px 0px 60px #1f4c65;
+  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4));
+}
+
+.btn:active {
+  scale: 0.92;
+}
+
+.btn:hover {
+  background: rgb(2, 29, 78);
+  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+  color: rgb(4, 4, 38);
+}
